@@ -1,0 +1,10 @@
+#!/bin/bash
+new_dir=$1
+echo " Enetr your Directory name"
+read new_dir
+if [ -d "$new_dir" ];then
+echo "Directory  exists"
+else
+` mkdir -p $new_dir `;
+echo " Directory created"
+fi
